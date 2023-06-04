@@ -60,7 +60,7 @@ body {
 
 .home {
   text-align: right;
-  padding: 102px 0px 0; /* Adjust the padding values as per your requirement */
+  padding: 102px 0px 0; 
 }
 
 .home h1 {
@@ -550,3 +550,165 @@ button:hover {
   transform: translateY(-5px);
 }
 
+@media only screen and (max-width: 600px) {
+  .home img {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-top: 0;
+  }
+  
+  .home-about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .sk-me .container {
+    padding: 10px;
+  }
+  
+  .sk-me .container .sk-content {
+    flex-direction: column;
+  }
+  
+  .left-content img {
+    width: 200px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .sk-content .left-content {
+    text-align: center;
+  }
+  
+  .right-content {
+    margin-top: 30px;
+  }
+  
+  .skills-heading {
+    text-align: center;
+    margin-left: 0;
+  }
+  
+  .skills-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .bar {
+    margin-bottom: 10px;
+  }
+  
+  .progress-line::before {
+    width: 100%;
+  }
+  
+  .details {
+    margin-top: 0;
+  }
+  
+  .edu-heading h1 {
+    margin-bottom: 20px;
+  }
+  
+  .edu-details {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .edu-item {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .edu-item h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .edu-arrow {
+    justify-content: flex-start;
+  }
+  
+  .proj-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .proj-1,
+  .proj-2 {
+    margin-bottom: 20px;
+  }
+  
+  .portfolio .container {
+    padding: 10px;
+  }
+  
+  .extra a {
+    font-size: 16px;
+  }
+  
+  .achievements .container {
+    padding: 10px;
+  }
+  
+  .achievements-details {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .achievement-item {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .achievement-item h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .achievement-item p {
+    font-size: 14px;
+  }
+  
+  .certifications-details {
+    justify-content: flex-start;
+  }
+  
+  .row {
+    flex-wrap: wrap;
+  }
+  
+  .certification-item {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .certification-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .certification-item p {
+    font-size: 14px;
+  }
+  
+  .contact-content {
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .social-links a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
