@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
 }
 .container {
   max-width: 1200px;
@@ -16,7 +15,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0,0,0,0.3);
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -61,31 +60,36 @@ body {
 .home {
   text-align: right;
   padding: 102px 0px 0; 
+  background: linear-gradient(to right, rgb(254, 254, 254), rgb(72, 72, 65) 45%, rgb(0, 0, 0));
 }
 
 .home h1 {
   font-size: 48px;
-  color: #000000;
+  color: #ffffff;
+}
+
+.home h3{
+  color: #ffffff;
 }
 
 .home p {
   font-size: 18px;
-  color: #0d0d0d;
+  color:white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .home img {
   position: absolute;
   width:50%;
-  left: 0px;
+  left: 0%;
   top: 59px;
   height: 611px;
 }
 
 
 .home-about {
-  padding: 20px;
-  max-width: 1000px;
+  padding: 1.42%;
+  max-width: 80%;
   margin-left:35%;
   margin-right:1%;
   text-align: justify;
@@ -114,8 +118,11 @@ body {
 .sk-heading {
   font-size: 36px;
   margin-bottom: 30px;
-  margin-left:190px;
+  margin-left:145px;
   margin-top:0px;
+}
+.sk-heading-2 {
+  font-size: 36px;
 }
 
 .sk-content {
@@ -307,7 +314,9 @@ body {
 }
 
 .proj-1,
-.proj-2 {
+.proj-2,
+.proj-3,
+.proj-4 {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 20px;
@@ -316,20 +325,26 @@ body {
 }
 
 .proj-1:hover,
-.proj-2:hover {
+.proj-2:hover,
+.proj-3:hover,
+.proj-4:hover {
   transform: translateY(-5px);
   transition: transform 0.5s ease;
 }
 
 .proj-1 h2,
-.proj-2 h2 {
+.proj-2 h2,
+.proj-3 h2,
+.proj-4 h2 {
   font-size: 24px;
   color: #222;
   margin-bottom: 10px;
 }
 
 .proj-1 p,
-.proj-2 p {
+.proj-2 p,
+.proj-3 p,
+.proj-4 p {
   font-size: 14px;
   color: #222;
 }
@@ -343,6 +358,44 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border:solid 2px black;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; 
+}
+
+.portfolio-image {
+ width:15%;
+ cursor: pointer;
+ border:solid 2px black;
+}
+
+.portfolio-image.maximized {
+  width: 80%; 
+}
+
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-image {
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border:solid 5px white;
 }
 
 button a {
@@ -415,14 +468,17 @@ button:hover {
 }
 
 .achievement-item a {
-  color: #666;
+  color: #ff0000;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  font-size:18px;
 }
 
 .achievement-item a:hover {
   color: #222;
-  font-size: larger;
+  font-size: 20px;
+  border:2px solid red;
+  padding:5px;
 }
 
 .container {
@@ -439,6 +495,7 @@ button:hover {
 .achievement-description {
   font-size: 16px;
 }
+
 
 
 #certifications {
@@ -548,167 +605,4 @@ button:hover {
 .social-links a:hover {
   background-color: #e65100;
   transform: translateY(-5px);
-}
-
-@media only screen and (max-width: 600px) {
-  .home img {
-    width: 100%;
-    height: auto;
-    position: static;
-    margin-top: 0;
-  }
-  
-  .home-about {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .sk-me .container {
-    padding: 10px;
-  }
-  
-  .sk-me .container .sk-content {
-    flex-direction: column;
-  }
-  
-  .left-content img {
-    width: 200px;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  
-  .sk-content .left-content {
-    text-align: center;
-  }
-  
-  .right-content {
-    margin-top: 30px;
-  }
-  
-  .skills-heading {
-    text-align: center;
-    margin-left: 0;
-  }
-  
-  .skills-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .bar {
-    margin-bottom: 10px;
-  }
-  
-  .progress-line::before {
-    width: 100%;
-  }
-  
-  .details {
-    margin-top: 0;
-  }
-  
-  .edu-heading h1 {
-    margin-bottom: 20px;
-  }
-  
-  .edu-details {
-    justify-content: flex-start;
-    margin-top: 20px;
-  }
-  
-  .edu-item {
-    width: 100%;
-    margin: 10px;
-  }
-  
-  .edu-item h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .edu-arrow {
-    justify-content: flex-start;
-  }
-  
-  .proj-heading {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  
-  .proj-1,
-  .proj-2 {
-    margin-bottom: 20px;
-  }
-  
-  .portfolio .container {
-    padding: 10px;
-  }
-  
-  .extra a {
-    font-size: 16px;
-  }
-  
-  .achievements .container {
-    padding: 10px;
-  }
-  
-  .achievements-details {
-    justify-content: flex-start;
-    margin-top: 20px;
-  }
-  
-  .achievement-item {
-    width: 100%;
-    margin: 10px;
-  }
-  
-  .achievement-item h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .achievement-item p {
-    font-size: 14px;
-  }
-  
-  .certifications-details {
-    justify-content: flex-start;
-  }
-  
-  .row {
-    flex-wrap: wrap;
-  }
-  
-  .certification-item {
-    width: 100%;
-    margin: 10px;
-  }
-  
-  .certification-item h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .certification-item p {
-    font-size: 14px;
-  }
-  
-  .contact-content {
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .contact p {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  .social-links a {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
 }

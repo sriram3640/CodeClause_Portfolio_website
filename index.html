@@ -3,6 +3,8 @@
 <head>
   <title>Sriram Surisetti - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="page" id="home-page">
@@ -12,12 +14,12 @@
       </div>
       <div class="nav-right">
         <a href="#home-page">Home</a>
-        <a href="#sk">My Skills</a>
+        <a href="#sk">Skills</a>
         <a href="#education">Education</a>
-        <a href="#portfolio">My Portfolio</a>
-        <a href="#achievements">My Achievements</a>
-        <a href="#certifications">My Certifications</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </div>
       </div>
     <div class="home" id="home">
@@ -41,7 +43,7 @@
         <div class="sk-content">
           <div class="left-content">
             <div>
-              <h1 class="sk-heading">My Skills</h1>
+              <h1 class="sk-heading">More About Me</h1>
             </div>
             <img src="images/profile.jpeg" alt="Profile Image" />
             <div class="cont">
@@ -53,6 +55,7 @@
           </div>
           <div class="right-content">
             <div class="skills-bar">
+              <center><h1 class="sk-heading-2">My Skills</h1></center>
               <div class="bar">
                 <div class="progress-line html" data-progress="80%"></div>
                 <div class="details">HTML</div>
@@ -140,15 +143,47 @@
         <div class="portfolio-content">
           <div class="proj-1">
               <h2>Location Bag</h2>
-              <p>Built using HTML, CSS, JavaScript, PHP, and MySQL</p>
+              <p>Built using HTML, CSS, JAVASCRIPT, PHP, and MySQL</p>
+              <div class="image-container">
+                <img src="images/loc_1.png" class="portfolio-image">
+                <img src="images/loc_2.png" class="portfolio-image">
+                <img src="images/loc_3.png" class="portfolio-image">
+                <img src="images/loc_4.png" class="portfolio-image">
+                <img src="images/loc_5.png" class="portfolio-image">
+              </div>
               <button><a href="https://github.com/sriram3640/Location_Bag" target="_blank">View Source</a></button>
           </div>
   
           <div class="proj-2">
               <h2>Gold Price Prediction</h2>
               <p>Built using Python, code libraries, and Random Forest Regression</p>
+              <div class="image-container">
+                <img src="images/gold_1.png" class="portfolio-image">
+                <img src="images/gold_2.png" class="portfolio-image">
+                <img src="images/gold_3.png" class="portfolio-image">
+              </div>
               <button><a href="https://github.com/sriram3640/Gold_Price_Prediction" target="_blank">View Source</a></button>
           </div>
+
+          <div class="proj-3">
+            <h2>Optimizing video inference</h2>
+            <p>Studied on various research papers of video inference optimising systems and implemented this using significant python libraries</p>
+            <button><a href="https://github.com/sriram3640/Optimizing-video-inference" target="_blank">View Source</a></button>
+        </div>
+
+        <div class="proj-4">
+          <h2>Unit Converter</h2>
+          <p>Built using HTML,CSS & JAVASCRIPT</p>
+          <div class="image-container">
+            <img src="images/unit_1.png" class="portfolio-image">
+            <img src="images/unit_2.png" class="portfolio-image">
+            <img src="images/unit_3.png" class="portfolio-image">
+          </div>
+          <button><a href="https://github.com/sriram3640/Unit_Converter" target="_blank">View Source</a></button>
+      </div>
+      <div id="image-popup" class="image-popup">
+        <img src="" id="popup-image" class="popup-image">
+      </div>
           <div class="extra">
           <center>see all my projects here: <a href="https://github.com/sriram3640">Click here!</a></center>
         </div>
@@ -177,7 +212,7 @@
               <div class="achievement-description">
                 <p>Achieved a remarkable rank of 831 out of 90,000 participants in the highly competitive PREPSAT Hiring Jobathon</p>
                 <p>Year: 2023</p>
-                <p>Organizer: PREPINSTA</p>
+                <p>PREPINSTA</p>
               </div>
             </div>
             <div class="achievement-item">
